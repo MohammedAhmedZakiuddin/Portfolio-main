@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/2b5acc4db8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-------------------------------- Header Section --------------------------------->
+
+<div id="header">
+    <div class="container">
+        <nav>   
+            <div class="logo">
+                <h1></h1>
+            </div>
+            <ul id="sidemenu">
+                <li><a href="#header"> Home</a></li>
+                <li><a href="#about"> About</a></li>
+                <li><a href="#services"> Services</a></li>
+                <li><a href="#portfolio"> Portfolio</a></li>
+                <li><a href="#contact"> Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="opnemenu()"></i>
+        </nav>
+        
+        <div class="header-text">
+            <p>Full-Stack Software Developer</p>
+            <h1>Hi, I'm <span> Mohammed </span><br> Zakiuddin </h1>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------- About ------------------------------------------>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/IMG_2657.jpg">
+                <img src="images/IMG_2620.jpg">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="one"> I am an undergraduate student at the University of Texas at Arlington. 
+                Majoring in computer science with a strong desire to use logic, coding, and effective problem-solving techniques to address global issues and advance human welfare.
+                My areas of expertise include strong coding, debugging, algorithm design, problem-solving skills, domain-driven design, responsive design concepts, website optimization, and Model View Control (MVC) techniques for coding. </p>
+                <br>
+                <p1 class="two"> I can pick up new skills and programming languages quickly. I currently have experience with Python, Java, C, JavaScript, C#, and the.NET framework. 
+                To ensure that I keep myself up to date, I am continuously looking to boost my expertise and acquire new programming languages, frameworks, and techniques. </p1>
+                <br>
+                <br>
+                <p3 class="four">I have relevant courses and projects in my portfolio that have helped me develop skills that will enable me to handle challenges in the actual world of business. 
+                I enjoy working in groups and collectively developing business solutions.
+                Any form of recommendation, counsel, or offer is welcome.</p3>
+                <br>
+                <br>
+                <p2 class="three"> "I believe if you don't keep yourself updated you will be considered to be outdated". </p2>   
+                <br>
+                <br>
+
+                
+                        
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Engineer</span><br>Machine Learning</li>
+                        <li><span>Software Development</span><br>Full Stack Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+    
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>May 2022 - August 2022</span><br>Internship at Dar Al Riyadh - Web Application Developer</li>
+                        <li><span>January 2022 - May 2022</span><br>Machine Learning - Research Assistant - University of Texas at Arlington</li>
+                        <li><span>May 2019 - August 2019</span><br>Product Development - Student Assistant - University of Texas at Arlington</li>
+                    </ul>
+                </div>
+    
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>January 2019 - May 2023</span><br>University of Texas at Arlington - Undergraduate - Computer Science</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------- Services -------------------------------------------->
+                        
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Worked on a variety of client-side and server-side programming languages and technologies, including HTML, CSS, JavaScript, ASP.NET, C#, and Python, to design and build websites.</p>
+                <a href="https://www.geeksforgeeks.org/web-development/">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Machine Learning</h2>
+                <p>Worked on statistical training data models to give computer systems the ability to learn from it.</p>
+                <a href="https://en.wikipedia.org/wiki/Machine_learning">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>Worked on designing and developing mobile applications for Android using programming languages and tools such as Java, 
+                Flutter, and Kotlin. Also worked with cross-platform mobile development languages such as React JS.</p>
+                <a href="https://aws.amazon.com/mobile/mobile-application-development/">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------- Portfolio ------------------------------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3> Survey App</h3>
+                    <p>Created a survey analysis web application system, which is an excellent way to connect with your customers 
+                    and was thus an essential tool for gathering user feedback. 
+                    These surveys were embedded in apps, allowing users to collect relevant feedback on how their customers perceive 
+                    their service as a whole or a particular employee's service.</p>
+                    <a href="https://github.com/MohammedAhmedZakiuddin/Survey-Analysis-System"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3> Budget App</h3>
+                    <p>Developed a budgeting app to keep track of your finances, such as income, savings, debt repayment, and investing. 
+                    This application will sync with your financial accounts to provide you with a real-time overview of your finances
+                    as they change. It will also use AI and Machine Learning to help people stay financially stable by allocating 
+                    their money properly.</p>
+                    <a href="https://github.com/MohammedAhmedZakiuddin/Budget_Planner_Application"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3> Crypto App</h3>
+                    <p>Developed a CryptoView application to assist cryptocurrency investors in making more informed crypto investments.
+                    This app will also provide users with access to relevant market news about various cryptocurrencies. 
+                    Users will be able to stay up to date on what is going on in the cryptocurrency world and make better investment decisions.</p>
+                    <a href="https://github.com/MohammedAhmedZakiuddin/CryptoView_Application/tree/main/CryptoView-main"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/MohammedAhmedZakiuddin" class="btn">See more</a>
+    </div>
+</div>
+
+
+<!--------------------------------- Contact -------------------------------------------->
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> ahmedzaki372100@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+1(682)-246-0581</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mohammed-ahmed-zakiuddin-00138917b/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/MohammedAhmedZakiuddin"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Images/Resume_M.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Mohammed Zakiuddin.</p>
+    </div>
+</div>
+
+<!--------------------------------- Scripting ------------------------------------------>
+
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+
+</script>
+
+<script>
+    
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyC98BQStm31OleYIaHvu1ZBwvhRghUC8JZg_zo0qy_ZIkBftIhnQQ2Iw0pdodK7qT6DQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
